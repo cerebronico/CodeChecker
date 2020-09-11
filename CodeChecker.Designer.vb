@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormCodeChecker
+Partial Class CodeChecker
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,8 @@ Partial Class FormCodeChecker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormCodeChecker))
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CodeChecker))
         Me.LiveviewForm1 = New Keyence.AutoID.SDK.LiveviewForm()
         Me.DataText = New System.Windows.Forms.TextBox()
         Me.ButtonOperator = New System.Windows.Forms.Button()
@@ -75,6 +76,7 @@ Partial Class FormCodeChecker
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.SerialPortModuleIO = New System.IO.Ports.SerialPort(Me.components)
         Me.StatusStrip1.SuspendLayout
         CType(Me.PictureBoxQr,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBoxSku,System.ComponentModel.ISupportInitialize).BeginInit
@@ -254,6 +256,9 @@ Partial Class FormCodeChecker
         '
         'PictureBoxQr
         '
+        Me.PictureBoxQr.ErrorImage = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
+        Me.PictureBoxQr.Image = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
+        Me.PictureBoxQr.InitialImage = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
         Me.PictureBoxQr.Location = New System.Drawing.Point(593, 92)
         Me.PictureBoxQr.Name = "PictureBoxQr"
         Me.PictureBoxQr.Size = New System.Drawing.Size(43, 37)
@@ -263,6 +268,9 @@ Partial Class FormCodeChecker
         '
         'PictureBoxSku
         '
+        Me.PictureBoxSku.ErrorImage = Global.CodeChecker.My.Resources.Resources.right_or_wrong_2
+        Me.PictureBoxSku.Image = CType(resources.GetObject("PictureBoxSku.Image"),System.Drawing.Image)
+        Me.PictureBoxSku.InitialImage = CType(resources.GetObject("PictureBoxSku.InitialImage"),System.Drawing.Image)
         Me.PictureBoxSku.Location = New System.Drawing.Point(593, 45)
         Me.PictureBoxSku.Name = "PictureBoxSku"
         Me.PictureBoxSku.Size = New System.Drawing.Size(43, 37)
@@ -478,6 +486,8 @@ Partial Class FormCodeChecker
         '
         'PictureBox1
         '
+        Me.PictureBox1.ErrorImage = Global.CodeChecker.My.Resources.Resources.Verde_f01
+        Me.PictureBox1.InitialImage = Global.CodeChecker.My.Resources.Resources.Verde_f02
         Me.PictureBox1.Location = New System.Drawing.Point(87, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(10, 10)
@@ -678,6 +688,11 @@ Partial Class FormCodeChecker
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "Lote:"
         '
+        'SerialPortModuleIO
+        '
+        Me.SerialPortModuleIO.BaudRate = 115200
+        Me.SerialPortModuleIO.PortName = "COM5"
+        '
         'FormCodeChecker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -781,4 +796,5 @@ End Sub
     Friend WithEvents Label13 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents SerialPortModuleIO As IO.Ports.SerialPort
 End Class

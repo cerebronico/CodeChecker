@@ -1,0 +1,31 @@
+{
+  "code": {
+    "8410063037851": {
+      "customer": "Mercadona",
+      "format": "8X1 KG",
+      "size": "52-58"
+    },
+    "8410063066141": {
+      "customer": "Mercadona",
+      "format": "6X2KG",
+      "size": "32-38"
+    },
+    "8410063068152": {
+      "customer": "Mercadona",
+      "format": "8X1KG",
+      "size": "32-38"
+    },
+
+    "8410063080666": {
+      "customer": "Pescanova",
+      "format": "6X2KG",
+      "size": "30-40"
+    },
+
+    "8410063086323": {
+      "customer": "Pescanova",
+      "format": "6X2KG ASC",
+      "size": "60-70"
+    }
+  }
+}

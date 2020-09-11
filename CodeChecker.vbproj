@@ -74,6 +74,9 @@
     <Reference Include="Keyence.AutoID.SDK">
       <HintPath>H:\Fabricantes\Keyence\SR_SDK\SDK\x86\Keyence.AutoID.SDK.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -99,11 +102,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCodeChecker.vb">
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCodeChecker.Designer.vb">
-      <DependentUpon>FormCodeChecker.vb</DependentUpon>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -122,10 +130,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Verifier.Designer.vb">
+      <DependentUpon>Verifier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormCodeChecker.resx">
-      <DependentUpon>FormCodeChecker.vb</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -133,8 +150,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Verifier.resx">
+      <DependentUpon>Verifier.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="boxes.json" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -145,6 +166,26 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\GSE 7-SEGMENT VFD.TTF" />
+    <None Include="Resources\LED_COUNTER-7.TTF" />
+    <None Include="Resources\LED_COUNTER-7_ITALIC.TTF" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\botonAzul.gif" />
+    <Content Include="Resources\botonAzul.png" />
+    <Content Include="Resources\botonGris.gif" />
+    <Content Include="Resources\botonRojo.gif" />
+    <Content Include="Resources\BotonVerde.gif" />
+    <Content Include="Resources\BUTTON_BLUE.bmp" />
+    <Content Include="Resources\led Verde OFF.bmp" />
+    <Content Include="Resources\right-or-wrong-2.png" />
+    <Content Include="Resources\right-or-wrong-3.png" />
+    <Content Include="Resources\Rojo_f01.gif" />
+    <Content Include="Resources\Rojo_f02.gif" />
+    <Content Include="Resources\Verde_f01.gif" />
+    <Content Include="Resources\Verde_f02.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
