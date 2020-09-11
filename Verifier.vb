@@ -61,11 +61,10 @@ Public Class Verifier
     End Sub
 
 
-    Private Sub Verificador_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing   
+    Private Sub Verifier_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing   
         If SerialPortIO.IsOpen Then
             SerialPortIO.Close()
         End If
-
 
        ' liveviewForm1.Dispose()
         _mReader.Dispose()
@@ -241,13 +240,6 @@ Public Class Verifier
             SerialPortIO.Close()
         End If
 
-
-        
-            'If SerialPortScanner.IsOpen
-            '    SerialPortScanner.WriteLine("LOFF" + vbCr)
-            '    SerialPortScanner.Close()
-            'End If
-
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
@@ -255,8 +247,7 @@ Public Class Verifier
         Close()
                  
     End Sub
-
-
+    
     Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click   
         Dim qrCode As String
 
@@ -291,9 +282,10 @@ Public Class Verifier
             My.Settings.Save()
             My.Settings.Reload()
 
-            'liveviewForm1.EndReceive()
+            'Stop liveview.
+            liveviewForm1.EndReceive()
             'Start liveview.
-            'liveviewForm1.BeginReceive()
+            liveviewForm1.BeginReceive()
 
             'Set ip address of ReaderAccessor.
             _mReader.IpAddress = "192.168.100.100"
@@ -335,6 +327,7 @@ Public Class Verifier
                 Else if s.Length = 5 Then
 
                     'SerialPortScanner.WriteLine("LOFF" + vbCr)
+                    ReceivedDataWrite(_mReader.ExecCommand("LOFF"))
 
                     If PictureBox1.InvokeRequired Then
                         PictureBox1.Invoke(DirectCast(Sub() PictureBox1.Image = CodeChecker.My.Resources.Resources.Verde_f01, MethodInvoker))
@@ -373,7 +366,7 @@ Public Class Verifier
             End If
             
         Catch ex As Exception
-            MessageBox.Show(ex.Message)
+            MessageBox.Show("error en dato de IO: " & ex.Message)
         End Try
 
     End Sub
@@ -382,7 +375,17 @@ Public Class Verifier
     Private Delegate Sub DelegateUserControl(str As String)
 
     Private Sub ReceivedDataWrite(receivedData As String)
-        DataText.Text = (receivedData)
+        if String.IsNullOrEmpty(receivedData) then Return
+
+        If receivedData = "ERROR" & vbCr Then
+            ToolStripStatusLabelScannedQr.Text = "NO SE PUDO LEER EL CODIGO"
+            ToolStripStatusLabelScannerBarcode.Text = ""
+        Else 
+            Dim s As String() = receivedData.Split(New Char() {","c})
+            ToolStripStatusLabelScannedQr.Text = s(0)
+            ToolStripStatusLabelScannerBarcode.Text = s(1)
+        End If
+        
     End Sub
  
     Private Sub Verifier_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown  

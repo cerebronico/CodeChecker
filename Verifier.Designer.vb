@@ -76,7 +76,6 @@ Partial Class Verifier
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBoxSKUScanned = New System.Windows.Forms.TextBox()
-        Me.DataText = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PictureBoxQr = New System.Windows.Forms.PictureBox()
@@ -180,7 +179,8 @@ Partial Class Verifier
         '
         Me.LabelPresentacion.AutoSize = true
         Me.LabelPresentacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 24!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelPresentacion.Location = New System.Drawing.Point(12, 5)
+        Me.LabelPresentacion.ForeColor = System.Drawing.Color.MediumBlue
+        Me.LabelPresentacion.Location = New System.Drawing.Point(10, 6)
         Me.LabelPresentacion.Name = "LabelPresentacion"
         Me.LabelPresentacion.Size = New System.Drawing.Size(133, 37)
         Me.LabelPresentacion.TabIndex = 66
@@ -657,17 +657,6 @@ Partial Class Verifier
         Me.TextBoxSKUScanned.TabStop = false
         Me.TextBoxSKUScanned.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'DataText
-        '
-        Me.DataText.Enabled = false
-        Me.DataText.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.DataText.Location = New System.Drawing.Point(141, 4)
-        Me.DataText.Name = "DataText"
-        Me.DataText.Size = New System.Drawing.Size(495, 38)
-        Me.DataText.TabIndex = 46
-        Me.DataText.TabStop = false
-        Me.DataText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
         'Label1
         '
         Me.Label1.AutoSize = true
@@ -760,7 +749,6 @@ Partial Class Verifier
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBoxSKUScanned)
-        Me.Controls.Add(Me.DataText)
         Me.Controls.Add(Me.TextBoxSKU)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
@@ -835,7 +823,6 @@ End Sub
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBoxSKUScanned As TextBox
-    Friend WithEvents DataText As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ImageList1 As ImageList
 End Class
