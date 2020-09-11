@@ -56,6 +56,7 @@ Partial Class Verifier
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LabelTotalCajas = New System.Windows.Forms.Label()
         Me.LabelNoCode = New System.Windows.Forms.Label()
         Me.LabelBad2DCode = New System.Windows.Forms.Label()
@@ -81,13 +82,12 @@ Partial Class Verifier
         Me.PictureBoxQr = New System.Windows.Forms.PictureBox()
         Me.PictureBoxSku = New System.Windows.Forms.PictureBox()
         Me.ButtonOperator = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.StatusStrip1.SuspendLayout
         Me.GroupBox2.SuspendLayout
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.PictureBoxQr,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBoxSku,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'ToolStripStatusLabelScannedQr
@@ -169,10 +169,10 @@ Partial Class Verifier
         Me.LiveviewForm1.ImageFormat = Keyence.AutoID.SDK.LiveviewForm.ImageFormatType.Jpeg
         Me.LiveviewForm1.ImageQuality = 5
         Me.LiveviewForm1.IpAddress = "192.168.100.100"
-        Me.LiveviewForm1.Location = New System.Drawing.Point(794, 48)
+        Me.LiveviewForm1.Location = New System.Drawing.Point(765, 12)
         Me.LiveviewForm1.Name = "LiveviewForm1"
         Me.LiveviewForm1.PullTimeSpan = 100
-        Me.LiveviewForm1.Size = New System.Drawing.Size(202, 174)
+        Me.LiveviewForm1.Size = New System.Drawing.Size(231, 210)
         Me.LiveviewForm1.TabIndex = 67
         Me.LiveviewForm1.TimeoutMs = 2000
         '
@@ -304,6 +304,7 @@ Partial Class Verifier
         '
         Me.ButtonSave2USB.AutoSize = true
         Me.ButtonSave2USB.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonSave2USB.BackgroundImage = Global.CodeChecker.My.Resources.Resources.botonGris
         Me.ButtonSave2USB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonSave2USB.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonSave2USB.Enabled = false
@@ -322,13 +323,14 @@ Partial Class Verifier
         'ButtonStart
         '
         Me.ButtonStart.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonStart.BackgroundImage = Global.CodeChecker.My.Resources.Resources.BotonVerde
         Me.ButtonStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonStart.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonStart.Enabled = false
         Me.ButtonStart.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.ButtonStart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.ButtonStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.ButtonStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ButtonStart.ForeColor = System.Drawing.Color.White
         Me.ButtonStart.Location = New System.Drawing.Point(828, 358)
@@ -341,12 +343,13 @@ Partial Class Verifier
         'ButtonExit
         '
         Me.ButtonExit.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonExit.BackgroundImage = Global.CodeChecker.My.Resources.Resources.botonRojo
         Me.ButtonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ButtonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ButtonExit.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.ButtonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.ButtonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ButtonExit.ForeColor = System.Drawing.Color.White
         Me.ButtonExit.Location = New System.Drawing.Point(828, 572)
@@ -433,6 +436,16 @@ Partial Class Verifier
         Me.GroupBox2.TabIndex = 55
         Me.GroupBox2.TabStop = false
         Me.GroupBox2.Text = "Cajas"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.CodeChecker.My.Resources.Resources.Verde_f01
+        Me.PictureBox1.Location = New System.Drawing.Point(87, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(10, 10)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = false
         '
         'LabelTotalCajas
         '
@@ -676,6 +689,7 @@ Partial Class Verifier
         '
         'PictureBoxQr
         '
+        Me.PictureBoxQr.Image = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
         Me.PictureBoxQr.Location = New System.Drawing.Point(593, 96)
         Me.PictureBoxQr.Name = "PictureBoxQr"
         Me.PictureBoxQr.Size = New System.Drawing.Size(43, 37)
@@ -685,6 +699,7 @@ Partial Class Verifier
         '
         'PictureBoxSku
         '
+        Me.PictureBoxSku.Image = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
         Me.PictureBoxSku.Location = New System.Drawing.Point(593, 49)
         Me.PictureBoxSku.Name = "PictureBoxSku"
         Me.PictureBoxSku.Size = New System.Drawing.Size(43, 37)
@@ -713,19 +728,11 @@ Partial Class Verifier
         Me.ButtonOperator.Text = "OPERADOR"
         Me.ButtonOperator.UseVisualStyleBackColor = false
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(87, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(10, 10)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 16
-        Me.PictureBox1.TabStop = false
-        '
         'Verifier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1122, 768)
         Me.Controls.Add(Me.LiveviewForm1)
         Me.Controls.Add(Me.LabelPresentacion)
@@ -756,17 +763,18 @@ Partial Class Verifier
         Me.Controls.Add(Me.DataText)
         Me.Controls.Add(Me.TextBoxSKU)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Verifier"
-        Me.Text = "Verifier"
+        Me.Text = "DesiCo. Code Verifier V1.0 - PROMARISCO"
         Me.StatusStrip1.ResumeLayout(false)
         Me.StatusStrip1.PerformLayout
         Me.GroupBox2.ResumeLayout(false)
         Me.GroupBox2.PerformLayout
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox1.ResumeLayout(false)
         Me.GroupBox1.PerformLayout
         CType(Me.PictureBoxQr,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBoxSku,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
 
