@@ -141,7 +141,7 @@ Partial Class Verifier
         '
         Me.TextBoxSKU.Enabled = false
         Me.TextBoxSKU.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxSKU.Location = New System.Drawing.Point(141, 48)
+        Me.TextBoxSKU.Location = New System.Drawing.Point(150, 50)
         Me.TextBoxSKU.Name = "TextBoxSKU"
         Me.TextBoxSKU.Size = New System.Drawing.Size(214, 38)
         Me.TextBoxSKU.TabIndex = 40
@@ -168,10 +168,10 @@ Partial Class Verifier
         Me.LiveviewForm1.ImageFormat = Keyence.AutoID.SDK.LiveviewForm.ImageFormatType.Jpeg
         Me.LiveviewForm1.ImageQuality = 5
         Me.LiveviewForm1.IpAddress = "192.168.100.100"
-        Me.LiveviewForm1.Location = New System.Drawing.Point(765, 12)
+        Me.LiveviewForm1.Location = New System.Drawing.Point(666, 32)
         Me.LiveviewForm1.Name = "LiveviewForm1"
         Me.LiveviewForm1.PullTimeSpan = 100
-        Me.LiveviewForm1.Size = New System.Drawing.Size(231, 210)
+        Me.LiveviewForm1.Size = New System.Drawing.Size(330, 256)
         Me.LiveviewForm1.TabIndex = 67
         Me.LiveviewForm1.TimeoutMs = 2000
         '
@@ -214,7 +214,7 @@ Partial Class Verifier
         '
         Me.TextBoxCodeScanned.Enabled = false
         Me.TextBoxCodeScanned.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxCodeScanned.Location = New System.Drawing.Point(393, 146)
+        Me.TextBoxCodeScanned.Location = New System.Drawing.Point(402, 148)
         Me.TextBoxCodeScanned.Name = "TextBoxCodeScanned"
         Me.TextBoxCodeScanned.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxCodeScanned.TabIndex = 61
@@ -225,7 +225,7 @@ Partial Class Verifier
         '
         Me.Label15.AutoSize = true
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label15.Location = New System.Drawing.Point(12, 151)
+        Me.Label15.Location = New System.Drawing.Point(21, 153)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(81, 25)
         Me.Label15.TabIndex = 60
@@ -235,7 +235,7 @@ Partial Class Verifier
         '
         Me.TextBoxCode.Enabled = false
         Me.TextBoxCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxCode.Location = New System.Drawing.Point(173, 146)
+        Me.TextBoxCode.Location = New System.Drawing.Point(182, 148)
         Me.TextBoxCode.Name = "TextBoxCode"
         Me.TextBoxCode.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxCode.TabIndex = 42
@@ -245,7 +245,7 @@ Partial Class Verifier
         '
         Me.TextBoxExpiryDateScanned.Enabled = false
         Me.TextBoxExpiryDateScanned.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxExpiryDateScanned.Location = New System.Drawing.Point(393, 244)
+        Me.TextBoxExpiryDateScanned.Location = New System.Drawing.Point(402, 246)
         Me.TextBoxExpiryDateScanned.Name = "TextBoxExpiryDateScanned"
         Me.TextBoxExpiryDateScanned.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxExpiryDateScanned.TabIndex = 59
@@ -256,7 +256,7 @@ Partial Class Verifier
         '
         Me.TextBoxProductionDateScanned.Enabled = false
         Me.TextBoxProductionDateScanned.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxProductionDateScanned.Location = New System.Drawing.Point(393, 195)
+        Me.TextBoxProductionDateScanned.Location = New System.Drawing.Point(402, 197)
         Me.TextBoxProductionDateScanned.Name = "TextBoxProductionDateScanned"
         Me.TextBoxProductionDateScanned.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxProductionDateScanned.TabIndex = 58
@@ -267,7 +267,7 @@ Partial Class Verifier
         '
         Me.TextBoxBatchScanned.Enabled = false
         Me.TextBoxBatchScanned.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxBatchScanned.Location = New System.Drawing.Point(393, 97)
+        Me.TextBoxBatchScanned.Location = New System.Drawing.Point(402, 99)
         Me.TextBoxBatchScanned.Name = "TextBoxBatchScanned"
         Me.TextBoxBatchScanned.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxBatchScanned.TabIndex = 57
@@ -281,7 +281,7 @@ Partial Class Verifier
         Me.DateTimePickerExpiry.Enabled = false
         Me.DateTimePickerExpiry.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.DateTimePickerExpiry.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerExpiry.Location = New System.Drawing.Point(173, 244)
+        Me.DateTimePickerExpiry.Location = New System.Drawing.Point(182, 246)
         Me.DateTimePickerExpiry.MinDate = New Date(2020, 6, 1, 0, 0, 0, 0)
         Me.DateTimePickerExpiry.Name = "DateTimePickerExpiry"
         Me.DateTimePickerExpiry.Size = New System.Drawing.Size(182, 38)
@@ -294,7 +294,7 @@ Partial Class Verifier
         Me.DateTimePickerProduction.Enabled = false
         Me.DateTimePickerProduction.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.DateTimePickerProduction.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerProduction.Location = New System.Drawing.Point(173, 195)
+        Me.DateTimePickerProduction.Location = New System.Drawing.Point(182, 197)
         Me.DateTimePickerProduction.MinDate = New Date(2020, 6, 1, 0, 0, 0, 0)
         Me.DateTimePickerProduction.Name = "DateTimePickerProduction"
         Me.DateTimePickerProduction.Size = New System.Drawing.Size(182, 38)
@@ -312,12 +312,12 @@ Partial Class Verifier
         Me.ButtonSave2USB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.ButtonSave2USB.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonSave2USB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.ButtonSave2USB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(64,Byte),Integer))
-        Me.ButtonSave2USB.Location = New System.Drawing.Point(828, 465)
+        Me.ButtonSave2USB.ForeColor = System.Drawing.Color.White
+        Me.ButtonSave2USB.Location = New System.Drawing.Point(828, 481)
         Me.ButtonSave2USB.Name = "ButtonSave2USB"
         Me.ButtonSave2USB.Size = New System.Drawing.Size(168, 86)
         Me.ButtonSave2USB.TabIndex = 53
-        Me.ButtonSave2USB.Text = "GUARDAR A USB"
+        Me.ButtonSave2USB.Text = "GUARDAR"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&" A USB"
         Me.ButtonSave2USB.UseVisualStyleBackColor = false
         '
         'ButtonStart
@@ -333,7 +333,7 @@ Partial Class Verifier
         Me.ButtonStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 16!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ButtonStart.ForeColor = System.Drawing.Color.White
-        Me.ButtonStart.Location = New System.Drawing.Point(828, 358)
+        Me.ButtonStart.Location = New System.Drawing.Point(828, 395)
         Me.ButtonStart.Name = "ButtonStart"
         Me.ButtonStart.Size = New System.Drawing.Size(168, 86)
         Me.ButtonStart.TabIndex = 51
@@ -352,7 +352,7 @@ Partial Class Verifier
         Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ButtonExit.ForeColor = System.Drawing.Color.White
-        Me.ButtonExit.Location = New System.Drawing.Point(828, 572)
+        Me.ButtonExit.Location = New System.Drawing.Point(828, 567)
         Me.ButtonExit.Name = "ButtonExit"
         Me.ButtonExit.Size = New System.Drawing.Size(168, 86)
         Me.ButtonExit.TabIndex = 39
@@ -363,7 +363,7 @@ Partial Class Verifier
         '
         Me.TextBoxBatch.Enabled = false
         Me.TextBoxBatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxBatch.Location = New System.Drawing.Point(173, 97)
+        Me.TextBoxBatch.Location = New System.Drawing.Point(182, 99)
         Me.TextBoxBatch.Name = "TextBoxBatch"
         Me.TextBoxBatch.Size = New System.Drawing.Size(182, 38)
         Me.TextBoxBatch.TabIndex = 41
@@ -373,7 +373,7 @@ Partial Class Verifier
         '
         Me.Label13.AutoSize = true
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label13.Location = New System.Drawing.Point(14, 251)
+        Me.Label13.Location = New System.Drawing.Point(23, 253)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(156, 25)
         Me.Label13.TabIndex = 50
@@ -383,7 +383,7 @@ Partial Class Verifier
         '
         Me.Label11.AutoSize = true
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label11.Location = New System.Drawing.Point(13, 203)
+        Me.Label11.Location = New System.Drawing.Point(22, 205)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(159, 25)
         Me.Label11.TabIndex = 52
@@ -400,9 +400,9 @@ Partial Class Verifier
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabelUserEnteredCode, Me.ToolStripStatusLabelScannedQr, Me.ToolStripStatusLabelScannerBarcode})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 746)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 667)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1122, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1008, 22)
         Me.StatusStrip1.TabIndex = 56
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -430,9 +430,9 @@ Partial Class Verifier
         Me.GroupBox2.Controls.Add(Me.LabelVoids)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(17, 291)
+        Me.GroupBox2.Location = New System.Drawing.Point(17, 328)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(778, 199)
+        Me.GroupBox2.Size = New System.Drawing.Size(778, 162)
         Me.GroupBox2.TabIndex = 55
         Me.GroupBox2.TabStop = false
         Me.GroupBox2.Text = "Cajas"
@@ -454,7 +454,7 @@ Partial Class Verifier
         Me.LabelTotalCajas.Font = New System.Drawing.Font("GSE 7-Segment VFD", 36!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.LabelTotalCajas.ForeColor = System.Drawing.Color.Red
         Me.LabelTotalCajas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.LabelTotalCajas.Location = New System.Drawing.Point(523, 109)
+        Me.LabelTotalCajas.Location = New System.Drawing.Point(523, 78)
         Me.LabelTotalCajas.Name = "LabelTotalCajas"
         Me.LabelTotalCajas.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.LabelTotalCajas.Size = New System.Drawing.Size(243, 75)
@@ -466,7 +466,7 @@ Partial Class Verifier
         '
         Me.LabelNoCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LabelNoCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 24!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelNoCode.Location = New System.Drawing.Point(344, 146)
+        Me.LabelNoCode.Location = New System.Drawing.Point(344, 115)
         Me.LabelNoCode.Name = "LabelNoCode"
         Me.LabelNoCode.Size = New System.Drawing.Size(156, 38)
         Me.LabelNoCode.TabIndex = 14
@@ -477,7 +477,7 @@ Partial Class Verifier
         '
         Me.LabelBad2DCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LabelBad2DCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 24!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelBad2DCode.Location = New System.Drawing.Point(344, 101)
+        Me.LabelBad2DCode.Location = New System.Drawing.Point(344, 70)
         Me.LabelBad2DCode.Name = "LabelBad2DCode"
         Me.LabelBad2DCode.Size = New System.Drawing.Size(156, 38)
         Me.LabelBad2DCode.TabIndex = 14
@@ -488,7 +488,7 @@ Partial Class Verifier
         '
         Me.LabelBad1DCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LabelBad1DCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 24!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelBad1DCode.Location = New System.Drawing.Point(344, 56)
+        Me.LabelBad1DCode.Location = New System.Drawing.Point(344, 25)
         Me.LabelBad1DCode.Name = "LabelBad1DCode"
         Me.LabelBad1DCode.Size = New System.Drawing.Size(156, 38)
         Me.LabelBad1DCode.TabIndex = 14
@@ -499,7 +499,7 @@ Partial Class Verifier
         '
         Me.LabelValidas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LabelValidas.Font = New System.Drawing.Font("Microsoft Sans Serif", 24!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelValidas.Location = New System.Drawing.Point(9, 146)
+        Me.LabelValidas.Location = New System.Drawing.Point(9, 115)
         Me.LabelValidas.Name = "LabelValidas"
         Me.LabelValidas.Size = New System.Drawing.Size(145, 38)
         Me.LabelValidas.TabIndex = 13
@@ -510,7 +510,7 @@ Partial Class Verifier
         '
         Me.Label8.AutoSize = true
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label8.Location = New System.Drawing.Point(518, 80)
+        Me.Label8.Location = New System.Drawing.Point(518, 49)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(92, 29)
         Me.Label8.TabIndex = 12
@@ -520,7 +520,7 @@ Partial Class Verifier
         '
         Me.Label14.AutoSize = true
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label14.Location = New System.Drawing.Point(169, 153)
+        Me.Label14.Location = New System.Drawing.Point(169, 122)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(169, 29)
         Me.Label14.TabIndex = 11
@@ -531,7 +531,7 @@ Partial Class Verifier
         '
         Me.Label12.AutoSize = true
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label12.Location = New System.Drawing.Point(204, 108)
+        Me.Label12.Location = New System.Drawing.Point(204, 77)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(134, 29)
         Me.Label12.TabIndex = 11
@@ -542,7 +542,7 @@ Partial Class Verifier
         '
         Me.Label6.AutoSize = true
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label6.Location = New System.Drawing.Point(138, 63)
+        Me.Label6.Location = New System.Drawing.Point(138, 32)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(200, 29)
         Me.Label6.TabIndex = 11
@@ -553,7 +553,7 @@ Partial Class Verifier
         '
         Me.LabelVoids.AutoSize = true
         Me.LabelVoids.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.LabelVoids.Location = New System.Drawing.Point(340, 26)
+        Me.LabelVoids.Location = New System.Drawing.Point(523, 25)
         Me.LabelVoids.Name = "LabelVoids"
         Me.LabelVoids.Size = New System.Drawing.Size(96, 20)
         Me.LabelVoids.TabIndex = 9
@@ -563,7 +563,7 @@ Partial Class Verifier
         '
         Me.Label2.AutoSize = true
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label2.Location = New System.Drawing.Point(9, 117)
+        Me.Label2.Location = New System.Drawing.Point(9, 86)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(73, 20)
         Me.Label2.TabIndex = 9
@@ -573,7 +573,7 @@ Partial Class Verifier
         '
         Me.Label3.AutoSize = true
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 57)
+        Me.Label3.Location = New System.Drawing.Point(21, 59)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 25)
         Me.Label3.TabIndex = 48
@@ -650,7 +650,7 @@ Partial Class Verifier
         '
         Me.TextBoxSKUScanned.Enabled = false
         Me.TextBoxSKUScanned.Font = New System.Drawing.Font("Microsoft Sans Serif", 20!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.TextBoxSKUScanned.Location = New System.Drawing.Point(361, 48)
+        Me.TextBoxSKUScanned.Location = New System.Drawing.Point(370, 50)
         Me.TextBoxSKUScanned.Name = "TextBoxSKUScanned"
         Me.TextBoxSKUScanned.Size = New System.Drawing.Size(214, 38)
         Me.TextBoxSKUScanned.TabIndex = 47
@@ -661,7 +661,7 @@ Partial Class Verifier
         '
         Me.Label1.AutoSize = true
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 102)
+        Me.Label1.Location = New System.Drawing.Point(21, 104)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 25)
         Me.Label1.TabIndex = 49
@@ -679,7 +679,7 @@ Partial Class Verifier
         'PictureBoxQr
         '
         Me.PictureBoxQr.Image = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
-        Me.PictureBoxQr.Location = New System.Drawing.Point(593, 96)
+        Me.PictureBoxQr.Location = New System.Drawing.Point(602, 98)
         Me.PictureBoxQr.Name = "PictureBoxQr"
         Me.PictureBoxQr.Size = New System.Drawing.Size(43, 37)
         Me.PictureBoxQr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -689,7 +689,7 @@ Partial Class Verifier
         'PictureBoxSku
         '
         Me.PictureBoxSku.Image = Global.CodeChecker.My.Resources.Resources.right_or_wrong_3
-        Me.PictureBoxSku.Location = New System.Drawing.Point(593, 49)
+        Me.PictureBoxSku.Location = New System.Drawing.Point(602, 51)
         Me.PictureBoxSku.Name = "PictureBoxSku"
         Me.PictureBoxSku.Size = New System.Drawing.Size(43, 37)
         Me.PictureBoxSku.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -710,7 +710,7 @@ Partial Class Verifier
         Me.ButtonOperator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonOperator.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.ButtonOperator.ForeColor = System.Drawing.Color.White
-        Me.ButtonOperator.Location = New System.Drawing.Point(828, 251)
+        Me.ButtonOperator.Location = New System.Drawing.Point(828, 309)
         Me.ButtonOperator.Name = "ButtonOperator"
         Me.ButtonOperator.Size = New System.Drawing.Size(168, 86)
         Me.ButtonOperator.TabIndex = 45
@@ -722,7 +722,7 @@ Partial Class Verifier
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1122, 768)
+        Me.ClientSize = New System.Drawing.Size(1008, 689)
         Me.Controls.Add(Me.LiveviewForm1)
         Me.Controls.Add(Me.LabelPresentacion)
         Me.Controls.Add(Me.LabelTime)

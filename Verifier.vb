@@ -99,114 +99,6 @@ Public Class Verifier
         End Try
     End Sub
 
-
-    'Private Sub SerialPortScanner_DataReceived(sender As Object, e As Ports.SerialDataReceivedEventArgs) Handles SerialPortScanner.DataReceived  
-    '    Static buffer As String, qr as Integer, barcode As Integer
-
-    '    Try
-    '        Do
-    '            buffer = SerialPortScanner.ReadLine()
-
-    '            Console.WriteLine(buffer.Length)
-    '            Console.WriteLine(buffer)
-
-    '            buffer = buffer.Replace(vbCr, "").Replace(vbLf, "")
-    '            Console.WriteLine(buffer.Length)
-    '            Console.WriteLine(buffer)
-
-    '            If buffer Is Nothing Then
-    '                Exit Do
-    '            Else if buffer = "ERROR" Then
-    '                SerialPortIO.WriteLine("B0")  ' wrong QR code
-    '                SerialPortIO.WriteLine("Q0")  ' wrong QR code
-    '                ToolStripStatusLabelScannedQr.Text  = "ERROR"
-    '                ToolStripStatusLabelScannerBarcode.Text = "ERROR"
-
-    '                ShowEmoticons(0)
-
-    '                Exit Do
-                
-    '            Else If buffer.Length = 46 Or buffer.Length = 47 Then
-    '                Dim s As String() = buffer.Split(New Char() {","c})
-
-    '                ToolStripStatusLabelScannedQr.Text = s(0)
-    '                ToolStripStatusLabelScannerBarcode.Text = s(1)
-
-    '                If s(0).Length = 32 or s(0).Length = 33 Then ' QR code
-    '                    If ToolStripStatusLabelUserEnteredCode.Text = s(0)
-    '                        SerialPortIO.WriteLine("Q2")  ' QR code correct
-    '                        qr = 2
-    '                    Else
-    '                        SerialPortIO.WriteLine("Q0")  ' wrong QR code
-    '                        qr = 0
-    '                    End If
-    '                End If
-
-    '                dim batch as String = Mid(s(0), 19, 8)
-
-    '                If TextBoxBatchScanned.InvokeRequired
-    '                    TextBoxBatchScanned.Invoke(DirectCast(Sub() TextBoxBatchScanned.text = batch, MethodInvoker))
-    '                End If
-
-    '                Dim code As String = Mid(s(0), 27)
-
-    '                If TextBoxCodeScanned.InvokeRequired
-    '                    TextBoxCodeScanned.Invoke(DirectCast(Sub() TextBoxCodeScanned.Text = code, MethodInvoker))
-    '                End If
-
-    '                Dim productionDate as String = Mid(s(0), 7, 2) & "/" & Mid(s(0), 5, 2) & _
-    '                                               "/" & Mid(s(0), 3, 2)
-
-    '                If TextBoxProductionDateScanned.InvokeRequired
-    '                    TextBoxProductionDateScanned.Invoke(DirectCast(Sub() TextBoxProductionDateScanned.Text = productionDate, MethodInvoker))
-    '                End If
-
-    '                Dim expiryDate as String = Mid(s(0), 15, 2) & "/" & Mid(s(0), 13, 2) & _
-    '                                           "/" & Mid(s(0), 11, 2)
-
-    '                if TextBoxExpiryDateScanned.InvokeRequired
-    '                    TextBoxExpiryDateScanned.Invoke(DirectCast(Sub() TextBoxExpiryDateScanned.Text = expiryDate, MethodInvoker))
-    '                End If
-
-    '                If s(1).Length = 13 ' barcode length
-
-    '                    If TextBoxSKUScanned.InvokeRequired
-    '                        TextBoxSKUScanned.Invoke(DirectCast(Sub() TextBoxSKUScanned.text = s(1), MethodInvoker))
-    '                        'TextBoxSKUScanned.Invoke(DirectCast(Sub() TextBoxSKUScanned.text = buffer, MethodInvoker))
-    '                    End If
-
-    '                    If TextBoxSKU.Text = s(1) ' barcode correct!
-    '                        SerialPortIO.WriteLine("B1")
-    '                        barcode = 1
-                            
-    '                    Else
-    '                        SerialPortIO.WriteLine("B0") ' wrong barcode
-    '                        barcode = 0
-                            
-    '                    End If
-
-    '                    _newBarcodeReceived = True
-
-    '                End If
-
-    '                ShowEmoticons(qr + barcode)
-
-    '                Exit Do
-
-    '            End If
-    '        Loop
-
-    '    Catch ex As Exception
-
-    '        MessageBox.Show("Scanner Error: " & ex.Message)
-
-    '    finally
-
-    '        buffer = Nothing
-    '    End Try
-
-    'End Sub
-
     Private Sub ShowEmoticons(choice As Integer)
 
         Select Case choice
@@ -317,7 +209,6 @@ Public Class Verifier
 
                 if s.Length = 1 and s(0) = "X" Then
 
-                    ' SerialPortScanner.WriteLine("LON" + vbCr)
                     ReceivedDataWrite(_mReader.ExecCommand("LON"))
 
                     If PictureBox1.InvokeRequired Then
@@ -326,7 +217,6 @@ Public Class Verifier
                     
                 Else if s.Length = 5 Then
 
-                    'SerialPortScanner.WriteLine("LOFF" + vbCr)
                     ReceivedDataWrite(_mReader.ExecCommand("LOFF"))
 
                     If PictureBox1.InvokeRequired Then
@@ -375,17 +265,87 @@ Public Class Verifier
     Private Delegate Sub DelegateUserControl(str As String)
 
     Private Sub ReceivedDataWrite(receivedData As String)
+        Dim qr as Integer, barcode As Integer
         if String.IsNullOrEmpty(receivedData) then Return
 
-        If receivedData = "ERROR" & vbCr Then
+        receivedData = receivedData.Replace(vbCr, "").Replace(vbLf, "")
+
+        If receivedData = "ERROR" Then
+            SerialPortIO.WriteLine("B0")  ' wrong QR code
+            SerialPortIO.WriteLine("Q0")  ' wrong QR code
             ToolStripStatusLabelScannedQr.Text = "NO SE PUDO LEER EL CODIGO"
-            ToolStripStatusLabelScannerBarcode.Text = ""
+            ToolStripStatusLabelScannerBarcode.Text = "ERROR"
+
+            If TextBoxSKUScanned.InvokeRequired
+                TextBoxSKUScanned.Invoke(DirectCast(Sub() TextBoxSKUScanned.text = "NO VISTO", MethodInvoker))
+            End If
+
+            ShowEmoticons(0)
+
         Else 
             Dim s As String() = receivedData.Split(New Char() {","c})
+
             ToolStripStatusLabelScannedQr.Text = s(0)
             ToolStripStatusLabelScannerBarcode.Text = s(1)
+
+            If s(0).Length = 32 or s(0).Length = 33 Then ' QR code
+                If ToolStripStatusLabelUserEnteredCode.Text = s(0)
+                    SerialPortIO.WriteLine("Q2")  ' QR code correct
+                    qr = 2
+                Else
+                    SerialPortIO.WriteLine("Q0")  ' wrong QR code
+                    qr = 0
+                End If
+            End If
+
+            dim batch as String = Mid(s(0), 19, 8)
+
+            If TextBoxBatchScanned.InvokeRequired
+                TextBoxBatchScanned.Invoke(DirectCast(Sub() TextBoxBatchScanned.text = batch, MethodInvoker))
+            End If
+
+            Dim code As String = Mid(s(0), 27)
+
+            If TextBoxCodeScanned.InvokeRequired
+                TextBoxCodeScanned.Invoke(DirectCast(Sub() TextBoxCodeScanned.Text = code, MethodInvoker))
+            End If
+
+            Dim productionDate as String = Mid(s(0), 7, 2) & "/" & Mid(s(0), 5, 2) & _
+                                           "/" & Mid(s(0), 3, 2)
+
+            If TextBoxProductionDateScanned.InvokeRequired
+                TextBoxProductionDateScanned.Invoke(DirectCast(Sub() TextBoxProductionDateScanned.Text = productionDate, MethodInvoker))
+            End If
+
+            Dim expiryDate as String = Mid(s(0), 15, 2) & "/" & Mid(s(0), 13, 2) & _
+                                       "/" & Mid(s(0), 11, 2)
+
+            if TextBoxExpiryDateScanned.InvokeRequired
+                TextBoxExpiryDateScanned.Invoke(DirectCast(Sub() TextBoxExpiryDateScanned.Text = expiryDate, MethodInvoker))
+            End If
+
+            If s(1).Length = 13 ' barcode length
+
+                If TextBoxSKUScanned.InvokeRequired
+                    TextBoxSKUScanned.Invoke(DirectCast(Sub() TextBoxSKUScanned.text = s(1), MethodInvoker))
+                End If
+
+                If TextBoxSKU.Text = s(1) ' barcode correct!
+                    SerialPortIO.WriteLine("B1")
+                    barcode = 1
+                Else
+                    SerialPortIO.WriteLine("B0") ' wrong barcode
+                    barcode = 0
+                End If
+
+            End If
+
+            ShowEmoticons(qr + barcode)
+
         End If
         
+        _newBarcodeReceived = True
+
     End Sub
  
     Private Sub Verifier_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown  
@@ -445,7 +405,7 @@ Public Class Verifier
         End If
 
         If CInt(LabelTotalCajas.Text) > 0 Then
-            voids = Cint(LabelBad1DCode.Text) + CInt(LabelBad2DCode.Text) + CInt(LabelNoCode.Text)/CInt(LabelTotalCajas.Text)
+            voids = 100 * (Cint(LabelBad1DCode.Text) + CInt(LabelBad2DCode.Text) + CInt(LabelNoCode.Text))/CInt(LabelTotalCajas.Text)
         End If
 
         LabelVoids.Text = "No válidas: " & voids.ToString() & "%"
