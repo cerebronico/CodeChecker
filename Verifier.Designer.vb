@@ -1,9 +1,14 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿Imports System.ComponentModel
+Imports System.IO.Ports
+Imports Keyence.AutoID.SDK
+Imports Microsoft.VisualBasic.CompilerServices
+
+<DesignerGenerated()> _
 Partial Class Verifier
-    Inherits System.Windows.Forms.Form
+    Inherits Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -15,12 +20,12 @@ Partial Class Verifier
     End Sub
 
     'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+    Private components As IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Verifier))
@@ -163,15 +168,17 @@ Partial Class Verifier
         '
         'LiveviewForm1
         '
+        Me.LiveviewForm1.AutoSize = true
         Me.LiveviewForm1.BackColor = System.Drawing.Color.Black
         Me.LiveviewForm1.BinningType = Keyence.AutoID.SDK.LiveviewForm.ImageBinningType.OneQuarter
+        Me.LiveviewForm1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.LiveviewForm1.ImageFormat = Keyence.AutoID.SDK.LiveviewForm.ImageFormatType.Jpeg
         Me.LiveviewForm1.ImageQuality = 5
         Me.LiveviewForm1.IpAddress = "192.168.100.100"
-        Me.LiveviewForm1.Location = New System.Drawing.Point(666, 32)
+        Me.LiveviewForm1.Location = New System.Drawing.Point(651, 13)
         Me.LiveviewForm1.Name = "LiveviewForm1"
         Me.LiveviewForm1.PullTimeSpan = 100
-        Me.LiveviewForm1.Size = New System.Drawing.Size(330, 256)
+        Me.LiveviewForm1.Size = New System.Drawing.Size(345, 271)
         Me.LiveviewForm1.TabIndex = 67
         Me.LiveviewForm1.TimeoutMs = 2000
         '
@@ -754,6 +761,7 @@ Partial Class Verifier
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Verifier"
         Me.Text = "DesiCo. Code Verifier V1.0 - PROMARISCO"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.StatusStrip1.ResumeLayout(false)
         Me.StatusStrip1.PerformLayout
         Me.GroupBox2.ResumeLayout(false)
@@ -769,8 +777,8 @@ Partial Class Verifier
 End Sub
 
     Friend WithEvents ToolStripStatusLabelScannedQr As ToolStripStatusLabel
-    Friend WithEvents SerialPortIO As IO.Ports.SerialPort
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents SerialPortIO As SerialPort
+    Friend WithEvents BackgroundWorker1 As BackgroundWorker
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents TextBoxTimeOut As TextBox
     Friend WithEvents TextBoxTOff As TextBox
@@ -778,7 +786,7 @@ End Sub
     Friend WithEvents TextBoxSKU As TextBox
     Friend WithEvents ToolStripStatusLabelScannerBarcode As ToolStripStatusLabel
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents LiveviewForm1 As Keyence.AutoID.SDK.LiveviewForm
+    Friend WithEvents LiveviewForm1 As LiveviewForm
     Friend WithEvents LabelPresentacion As Label
     Friend WithEvents LabelTime As Label
     Friend WithEvents LabelDate As Label

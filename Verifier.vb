@@ -1,9 +1,11 @@
 ﻿Imports System.ComponentModel
-Imports System.IO
 Imports System.Globalization
+Imports System.IO.Ports
+Imports System.Text
+Imports System.Threading
+Imports CodeChecker.My
+Imports CodeChecker.My.Resources
 Imports Keyence.AutoID.SDK
-imports Newtonsoft.Json
-Imports Newtonsoft.Json.Linq
 
 
 Public Class Verifier
@@ -13,7 +15,11 @@ Public Class Verifier
     Dim _dtfInfo As CultureInfo 'DateTimeFormatInfo
     Dim _dtStyle as String = "dddd, dd MMMM yyyy"
 
-    Private Sub CodeChecker_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load 
+    Declare Function Wow64DisableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    Declare Function Wow64EnableWow64FsRedirection Lib "kernel32" (ByRef oldvalue As Long) As Boolean
+    Private osk As String = "C:\Windows\System32\osk.exe"
+
+    Private Sub CodeChecker_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load 
         
         CheckForExistingInstance()
 
@@ -21,17 +27,17 @@ Public Class Verifier
             Me.WindowState = vbNormal   
         #End If
         
-        Threading.Thread.CurrentThread.CurrentCulture = New CultureInfo("es-EC")
+        Thread.CurrentThread.CurrentCulture = New CultureInfo("es-EC")
 
         Dim dateFormat As DateTimeFormatInfo = CultureInfo.GetCultureInfo("es-EC").DateTimeFormat   
 
-        Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat = dateFormat
+        Thread.CurrentThread.CurrentCulture.DateTimeFormat = dateFormat
 
         PictureBoxQr.Visible = False
         PictureBoxSku.Visible = False
-        TextBoxTOn.Text = My.MySettings.Default.var_TOn
-        TextBoxTOff.Text = My.MySettings.Default.var_TOFF
-        TextBoxTimeOut.Text = My.MySettings.Default.var_TOUT
+        TextBoxTOn.Text = MySettings.Default.var_TOn
+        TextBoxTOff.Text = MySettings.Default.var_TOFF
+        TextBoxTimeOut.Text = MySettings.Default.var_TOUT
 
         LabelValidas.Text = 0
         LabelBad1DCode.Text = 0
@@ -43,7 +49,7 @@ Public Class Verifier
 
         LabelDate.Text = _dt
 
-        Me.ActiveControl = Me.TextBoxSKUScanned
+        ActiveControl = TextBoxSKUScanned
         TextBoxSKUScanned.SelectAll()
 
 
@@ -59,7 +65,6 @@ Public Class Verifier
         End Try
 
     End Sub
-
 
     Private Sub Verifier_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing   
         If SerialPortIO.IsOpen Then
@@ -79,14 +84,14 @@ Public Class Verifier
     Private Sub ButtonSetParameters_Click(sender As Object, e As EventArgs) Handles ButtonSetParameters.Click  
 
         Try
-            My.MySettings.Default.var_TOn = TextBoxTOn.Text
-            My.MySettings.Default.var_TOFF = TextBoxTOff.Text
-            My.MySettings.Default.var_TOUT = TextBoxTimeOut.Text
+            MySettings.Default.var_TOn = TextBoxTOn.Text
+            MySettings.Default.var_TOFF = TextBoxTOff.Text
+            MySettings.Default.var_TOUT = TextBoxTimeOut.Text
             
             dim cmd as String = "P " & TextBoxTimeOut.Text & " " & TextBoxTOn.Text & " " & TextBoxTOff.Text & vbCr
             
-            My.Settings.Save()
-            My.Settings.Reload()
+            Settings.Save()
+            Settings.Reload()
 
             TextBoxSKUScanned.Focus()
 
@@ -103,17 +108,18 @@ Public Class Verifier
 
         Select Case choice
             Case 0
-                PictureBoxSku.Image = CodeChecker.My.Resources.Resources.right_or_wrong_3
-                PictureBoxQr.Image = CodeChecker.My.Resources.Resources.right_or_wrong_3
+                PictureBoxSku.Image = right_or_wrong_3
+                PictureBoxQr.Image = right_or_wrong_3
+                
             Case 1
-                PictureBoxSku.Image = CodeChecker.My.Resources.Resources.right_or_wrong_2
-                PictureBoxQr.Image = CodeChecker.My.Resources.Resources.right_or_wrong_3
+                PictureBoxSku.Image = right_or_wrong_2
+                PictureBoxQr.Image = right_or_wrong_3
             Case 2
-                PictureBoxSku.Image = CodeChecker.My.Resources.Resources.right_or_wrong_3
-                PictureBoxQr.Image = CodeChecker.My.Resources.Resources.right_or_wrong_2
+                PictureBoxSku.Image = right_or_wrong_3
+                PictureBoxQr.Image = right_or_wrong_2
             Case 3
-                PictureBoxSku.Image = CodeChecker.My.Resources.Resources.right_or_wrong_2
-                PictureBoxQr.Image = CodeChecker.My.Resources.Resources.right_or_wrong_2
+                PictureBoxSku.Image = right_or_wrong_2
+                PictureBoxQr.Image = right_or_wrong_2
         End Select
 
         If PictureBoxSku.InvokeRequired
@@ -148,6 +154,7 @@ Public Class Verifier
                  TextBoxBatch.Text + TextBoxCode.Text
 
         ToolStripStatusLabelUserEnteredCode.Text=qrCode
+        Computer.Audio.Play("D:\Proyectos\Promarisco\Codigos de barra\CodeChecker\Resources\tos-redalert.wav")
 
         With me
             .TextBoxSKU.Enabled=False
@@ -169,10 +176,10 @@ Public Class Verifier
 
             .TextBoxSKUScanned.Focus()
 
-            My.MySettings.Default.SKU = TextBoxSKU.Text
+            MySettings.Default.SKU = TextBoxSKU.Text
 
-            My.Settings.Save()
-            My.Settings.Reload()
+            Settings.Save()
+            Settings.Reload()
 
             'Stop liveview.
             liveviewForm1.EndReceive()
@@ -191,10 +198,10 @@ Public Class Verifier
     Private Sub ReceivedDataAction(data As Byte())
         'Define received data actions here.Defined actions work asynchronously.
         '"ReceivedDataWrite" works when reading data was received.
-        BeginInvoke(New DelegateUserControl(AddressOf ReceivedDataWrite), System.Text.Encoding.ASCII.GetString(data))
+        BeginInvoke(New DelegateUserControl(AddressOf ReceivedDataWrite), Encoding.ASCII.GetString(data))
     End Sub
 
-    Private Sub SerialPortIO_DataReceived(sender As Object, e As Ports.SerialDataReceivedEventArgs) Handles SerialPortIO.DataReceived
+    Private Sub SerialPortIO_DataReceived(sender As Object, e As SerialDataReceivedEventArgs) Handles SerialPortIO.DataReceived
 
         Try
             Dim buffer as String, myData As String, s() As String
@@ -212,7 +219,7 @@ Public Class Verifier
                     ReceivedDataWrite(_mReader.ExecCommand("LON"))
 
                     If PictureBox1.InvokeRequired Then
-                        PictureBox1.Invoke(DirectCast(Sub() PictureBox1.Image = CodeChecker.My.Resources.Resources.Verde_f02, MethodInvoker))
+                        PictureBox1.Invoke(DirectCast(Sub() PictureBox1.Image = Verde_f02, MethodInvoker))
                     End If
                     
                 Else if s.Length = 5 Then
@@ -220,7 +227,7 @@ Public Class Verifier
                     ReceivedDataWrite(_mReader.ExecCommand("LOFF"))
 
                     If PictureBox1.InvokeRequired Then
-                        PictureBox1.Invoke(DirectCast(Sub() PictureBox1.Image = CodeChecker.My.Resources.Resources.Verde_f01, MethodInvoker))
+                        PictureBox1.Invoke(DirectCast(Sub() PictureBox1.Image = Verde_f01, MethodInvoker))
                     End If
 
                     If LabelNoCode.InvokeRequired Then
@@ -412,12 +419,23 @@ Public Class Verifier
  
     End Sub
 
-    Private Sub TextBoxSKU_Click(sender As Object, e As EventArgs) Handles TextBoxSKU.Click
-        'Call LoadOnScreenNumpad(TextBoxSKU)
-    End Sub
-
     Private Sub DateTimePickerProduction_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePickerProduction.ValueChanged
         DateTimePickerExpiry.Value = DateAdd("m", 10, DateTimePickerProduction.Value)
     End Sub
+
+    Private Sub TextBoxBatch_Enter(sender As Object, e As EventArgs) Handles TextBoxBatch.Enter, TextBoxSKU.Enter, TextBoxCode.Enter
+        If textBoxBatch.TabIndex > 0 Then
+            Dim old As Long
+            If Environment.Is64BitOperatingSystem Then
+                If Wow64DisableWow64FsRedirection(old) Then
+                    Process.Start(osk)
+                    Wow64EnableWow64FsRedirection(old)
+                End If
+            Else
+                Process.Start(osk)
+            End If
+        End If
+    End Sub
+
 
 End Class

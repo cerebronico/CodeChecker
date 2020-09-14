@@ -1,4 +1,6 @@
-﻿Public Class Login
+﻿Imports CodeChecker.My
+
+Public Class Login
 
     ' TODO: Insert code to perform custom authentication using the provided username and password 
     ' (See https://go.microsoft.com/fwlink/?LinkId=35339).  
@@ -8,7 +10,7 @@
     ' Subsequently, My.User will return identity information encapsulated in the CustomPrincipal object
     ' such as the username, display name, etc.
 
-    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
+    Private Sub OK_Click(ByVal sender As Object, ByVal e As EventArgs) Handles OK.Click
 
         With Verifier
             .TextBoxSKU.Enabled=True
@@ -27,8 +29,8 @@
             .TextBoxCode.Text="1453-8C"
 #End If
 
-            .TextBoxSKU.Text = CodeChecker.My.MySettings.Default.SKU
-            Dim mode as Integer = CodeChecker.My.MySettings.Default.mode
+            .TextBoxSKU.Text = MySettings.Default.SKU
+            Dim mode as Integer = MySettings.Default.mode
 
             
         End With
@@ -36,7 +38,7 @@
         Me.Close()
     End Sub
 
-    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
+    Private Sub Cancel_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Cancel.Click
         Me.Close()
     End Sub
 

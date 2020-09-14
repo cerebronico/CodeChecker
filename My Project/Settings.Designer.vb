@@ -11,16 +11,21 @@
 Option Strict On
 Option Explicit On
 
+Imports System.CodeDom.Compiler
+Imports System.ComponentModel
+Imports System.ComponentModel.Design
+Imports System.Configuration
+Imports System.Runtime.CompilerServices
 
 Namespace My
     
-    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0"),  _
-     Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
+    <CompilerGenerated(),  _
+     GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0"),  _
+     EditorBrowsable(EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
-        Inherits Global.System.Configuration.ApplicationSettingsBase
+        Inherits ApplicationSettingsBase
         
-        Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()),MySettings)
+        Private Shared defaultInstance As MySettings = CType(Synchronized(New MySettings()),MySettings)
         
 #Region "My.Settings Auto-Save Functionality"
 #If _MyType = "WindowsForms" Then
@@ -28,10 +33,10 @@ Namespace My
 
     Private Shared addedHandlerLockObject As New Object
 
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
-    Private Shared Sub AutoSaveSettings(sender As Global.System.Object, e As Global.System.EventArgs)
-        If My.Application.SaveMySettingsOnExit Then
-            My.Settings.Save()
+    <DebuggerNonUserCode(), EditorBrowsable(EditorBrowsableState.Advanced)> _
+    Private Shared Sub AutoSaveSettings(sender As Object, e As EventArgs)
+        If Application.SaveMySettingsOnExit Then
+            Settings.Save()
         End If
     End Sub
 #End If
@@ -44,7 +49,7 @@ Namespace My
                If Not addedHandler Then
                     SyncLock addedHandlerLockObject
                         If Not addedHandler Then
-                            AddHandler My.Application.Shutdown, AddressOf AutoSaveSettings
+                            AddHandler Application.Shutdown, AddressOf AutoSaveSettings
                             addedHandler = True
                         End If
                     End SyncLock
@@ -54,9 +59,9 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1000")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("1000")>  _
         Public Property var_TOUT() As String
             Get
                 Return CType(Me("var_TOUT"),String)
@@ -66,9 +71,9 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("200")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("200")>  _
         Public Property var_TOn() As String
             Get
                 Return CType(Me("var_TOn"),String)
@@ -78,9 +83,9 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("100")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("100")>  _
         Public Property var_TOFF() As String
             Get
                 Return CType(Me("var_TOFF"),String)
@@ -90,9 +95,9 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("100")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("100")>  _
         Public Property var_INTERVAL() As String
             Get
                 Return CType(Me("var_INTERVAL"),String)
@@ -102,9 +107,9 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("")>  _
         Public Property SKU() As String
             Get
                 Return CType(Me("SKU"),String)
@@ -114,9 +119,9 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        <UserScopedSetting(),  _
+         DebuggerNonUserCode(),  _
+         DefaultSettingValue("1")>  _
         Public Property mode() As Integer
             Get
                 Return CType(Me("mode"),Integer)
@@ -130,15 +135,15 @@ End Namespace
 
 Namespace My
     
-    <Global.Microsoft.VisualBasic.HideModuleNameAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
+    <HideModuleName(),  _
+     DebuggerNonUserCode(),  _
+     CompilerGenerated()>  _
     Friend Module MySettingsProperty
         
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.CodeChecker.My.MySettings
+        <HelpKeyword("My.Settings")>  _
+        Friend ReadOnly Property Settings() As MySettings
             Get
-                Return Global.CodeChecker.My.MySettings.Default
+                Return MySettings.Default
             End Get
         End Property
     End Module
