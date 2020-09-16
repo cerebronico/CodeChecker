@@ -120,19 +120,12 @@
     <Compile Include="Admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Numpad.Designer.vb">
-      <DependentUpon>Numpad.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Numpad.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modMain.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -160,9 +153,6 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Numpad.resx">
-      <DependentUpon>Numpad.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +161,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verifier.es-DO.resx">
+      <DependentUpon>Verifier.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verifier.resx">
       <DependentUpon>Verifier.vb</DependentUpon>
@@ -201,11 +194,13 @@
     <Content Include="Resources\botonRojo.gif" />
     <Content Include="Resources\BotonVerde.gif" />
     <Content Include="Resources\BUTTON_BLUE.bmp" />
+    <None Include="Resources\D_y_SCR.ico" />
     <Content Include="Resources\led Verde OFF.bmp" />
     <Content Include="Resources\right-or-wrong-2.png" />
     <Content Include="Resources\right-or-wrong-3.png" />
     <Content Include="Resources\Rojo_f01.gif" />
     <Content Include="Resources\Rojo_f02.gif" />
+    <Content Include="Resources\tos-redalert.wav" />
     <Content Include="Resources\Verde_f01.gif" />
     <Content Include="Resources\Verde_f02.gif" />
   </ItemGroup>

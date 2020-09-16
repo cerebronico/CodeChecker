@@ -117,75 +117,303 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="SerialPortIO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>176, 17</value>
-  </metadata>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>339, 17</value>
-  </metadata>
-  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>438, 17</value>
-  </metadata>
-  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>527, 17</value>
-  </metadata>
-  <metadata name="ImageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>644, 17</value>
-  </metadata>
-  <data name="ImageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADq
-        CQAAAk1TRnQBSQFMAgEBBAEAAagBAgGoAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
-        AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
-        AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
-        AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
-        AwABZgMAAZkDAAHMAgABMwMAAjMCAAEzAWYCAAEzAZkCAAEzAcwCAAEzAf8CAAFmAwABZgEzAgACZgIA
-        AWYBmQIAAWYBzAIAAWYB/wIAAZkDAAGZATMCAAGZAWYCAAKZAgABmQHMAgABmQH/AgABzAMAAcwBMwIA
-        AcwBZgIAAcwBmQIAAswCAAHMAf8CAAH/AWYCAAH/AZkCAAH/AcwBAAEzAf8CAAH/AQABMwEAATMBAAFm
-        AQABMwEAAZkBAAEzAQABzAEAATMBAAH/AQAB/wEzAgADMwEAAjMBZgEAAjMBmQEAAjMBzAEAAjMB/wEA
-        ATMBZgIAATMBZgEzAQABMwJmAQABMwFmAZkBAAEzAWYBzAEAATMBZgH/AQABMwGZAgABMwGZATMBAAEz
-        AZkBZgEAATMCmQEAATMBmQHMAQABMwGZAf8BAAEzAcwCAAEzAcwBMwEAATMBzAFmAQABMwHMAZkBAAEz
-        AswBAAEzAcwB/wEAATMB/wEzAQABMwH/AWYBAAEzAf8BmQEAATMB/wHMAQABMwL/AQABZgMAAWYBAAEz
-        AQABZgEAAWYBAAFmAQABmQEAAWYBAAHMAQABZgEAAf8BAAFmATMCAAFmAjMBAAFmATMBZgEAAWYBMwGZ
-        AQABZgEzAcwBAAFmATMB/wEAAmYCAAJmATMBAANmAQACZgGZAQACZgHMAQABZgGZAgABZgGZATMBAAFm
-        AZkBZgEAAWYCmQEAAWYBmQHMAQABZgGZAf8BAAFmAcwCAAFmAcwBMwEAAWYBzAGZAQABZgLMAQABZgHM
-        Af8BAAFmAf8CAAFmAf8BMwEAAWYB/wGZAQABZgH/AcwBAAHMAQAB/wEAAf8BAAHMAQACmQIAAZkBMwGZ
-        AQABmQEAAZkBAAGZAQABzAEAAZkDAAGZAjMBAAGZAQABZgEAAZkBMwHMAQABmQEAAf8BAAGZAWYCAAGZ
-        AWYBMwEAAZkBMwFmAQABmQFmAZkBAAGZAWYBzAEAAZkBMwH/AQACmQEzAQACmQFmAQADmQEAApkBzAEA
-        ApkB/wEAAZkBzAIAAZkBzAEzAQABZgHMAWYBAAGZAcwBmQEAAZkCzAEAAZkBzAH/AQABmQH/AgABmQH/
-        ATMBAAGZAcwBZgEAAZkB/wGZAQABmQH/AcwBAAGZAv8BAAHMAwABmQEAATMBAAHMAQABZgEAAcwBAAGZ
-        AQABzAEAAcwBAAGZATMCAAHMAjMBAAHMATMBZgEAAcwBMwGZAQABzAEzAcwBAAHMATMB/wEAAcwBZgIA
-        AcwBZgEzAQABmQJmAQABzAFmAZkBAAHMAWYBzAEAAZkBZgH/AQABzAGZAgABzAGZATMBAAHMAZkBZgEA
-        AcwCmQEAAcwBmQHMAQABzAGZAf8BAALMAgACzAEzAQACzAFmAQACzAGZAQADzAEAAswB/wEAAcwB/wIA
-        AcwB/wEzAQABmQH/AWYBAAHMAf8BmQEAAcwB/wHMAQABzAL/AQABzAEAATMBAAH/AQABZgEAAf8BAAGZ
-        AQABzAEzAgAB/wIzAQAB/wEzAWYBAAH/ATMBmQEAAf8BMwHMAQAB/wEzAf8BAAH/AWYCAAH/AWYBMwEA
-        AcwCZgEAAf8BZgGZAQAB/wFmAcwBAAHMAWYB/wEAAf8BmQIAAf8BmQEzAQAB/wGZAWYBAAH/ApkBAAH/
-        AZkBzAEAAf8BmQH/AQAB/wHMAgAB/wHMATMBAAH/AcwBZgEAAf8BzAGZAQAB/wLMAQAB/wHMAf8BAAL/
-        ATMBAAHMAf8BZgEAAv8BmQEAAv8BzAEAAmYB/wEAAWYB/wFmAQABZgL/AQAB/wJmAQAB/wFmAf8BAAL/
-        AWYBAAEhAQABpQEAA18BAAN3AQADhgEAA5YBAAPLAQADsgEAA9cBAAPdAQAD4wEAA+oBAAPxAQAD+AEA
-        AfAB+wH/AQABpAKgAQADgAMAAf8CAAH/AwAC/wEAAf8DAAH/AQAB/wEAAv8CAAP//wD/AEQAAfQBGwGZ
-        BHgBCAHzAfQB/wEAAfQBwgGYBJcBmAHzAfQB/wEAAfQB8QGZBG8BkwHzAfQB/wEAAfQBGgGUBOMBlAHz
-        AfQB/wEAAbwBeAFWAZcCeAJWAZgB8gH0AQABCAGXAjMC+gEzAVUBlwHCAfQBAAEaAW8CRgFpA0YBkwEa
-        AfQBAAG9AeMB+QRBAUcB4wG9AfQB8wF4AVYBeAGYAp8BngJWAZgB8wEbAZcBMwX6AjMBlwHzAfIBbwFG
-        AW8BFgKUARYCRgGTAfMBGwHjAfkFQQH5AUEB4wHzAZgBVgF4AZ8EwgGfAlYBCAHkATMH+gEzAVUBmAFv
-        AUYBbwaUAkYBkwHjCEEB+QFHAZQBTwGXAZ8GwgGeAVYBmAIzCPoBMwGXAekBRgEWBpQBFgFGAW8B+QpB
-        AeMBLgF4AZ8GwgGfAngCMwn6AZcBHwFvCJQBRgFvAfkKQQHjAS4BmAfCAZ8CeAEzAfoBWgLkAVoF+gGX
-        AR8BbwO9BZQBaQFvAfkBRwEXAuMBRwVBAeMBUAF4ARsC9ATCAZgBlwF4ATMB+gHkAsIBngFaA/oBMwGX
-        AUYBbwG9AfQCvQOUARYBRgFvAfkBFwGUAb0BlAFqBUEB4wF4AZcBCAEbAfMDwgGfAXgBVgGZAZcBVQHk
-        AZ4BwgHkAVoD+gEzAZgCbwGZARsB8wSUAW8BRgGZAhcBFgK9AWoEQQH5AZQB8AKXAZkDwgGfAXgBVgF4
-        ARsBwgJVAVoB5AJaAvoBMwGXAcIBGgJvAZQBvQKUARYB4wFGAW8B8QG9AhcC4wFqA0EB+QHjARoB9AEI
-        AXgBlwN4AZcBVgF4AbwC9AEIAlUBMwL6AjMBlwEIAvQBBwVvAkYBbwEaAvQBmgEXAUcFQQHjAb0B9AEA
-        AfQB8AF4AVACLgFPAZgB8wMAAfQBwgGXBDMB5AEbAwAB9AEaAW8BRgIfAekBbwHyAwAB9AG9ARcE+QHj
-        ARsCAAFCAU0BPgcAAT4DAAEoAwABMAMAARgDAAEBAQABAQUAAcAXAAP/YQABgAEIAQABgAEIAwABgAEI
-        AQABgAEISwABgAE4AQMBgAE4AQMCAAs=
-</value>
+  <data name="&gt;&gt;TextBoxTimeOut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>778, 162</value>
+  </data>
+  <data name="LabelBad2DCode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="Label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LabelBad2DCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 38</value>
+  </data>
+  <data name="TextBoxTOff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 26</value>
+  </data>
+  <data name="&gt;&gt;LabelPresentacion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label14.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ButtonSave2USB.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 13</value>
+  </data>
+  <data name="&gt;&gt;Label12.Name" xml:space="preserve">
+    <value>Label12</value>
+  </data>
+  <data name="TextBoxCodeScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 148</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TextBoxSKU.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBoxSKU.ToolTip" xml:space="preserve">
+    <value>código de barras</value>
+  </data>
+  <data name="&gt;&gt;ButtonSave2USB.Name" xml:space="preserve">
+    <value>ButtonSave2USB</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOff.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;LabelNoCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxSKU.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="LabelTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Digital, 71.99999pt</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="ToolStripStatusLabelScannedQr.Text" xml:space="preserve">
+    <value>Scanned QR code</value>
+  </data>
+  <data name="LabelTime.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatch.Name" xml:space="preserve">
+    <value>TextBoxBatch</value>
+  </data>
+  <data name="Label13.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TextBoxBatch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 32</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 49</value>
+  </data>
+  <data name="TextBoxTimeOut.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>Código QR</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerExpiry.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label13.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Label13.Name" xml:space="preserve">
+    <value>Label13</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Código de barras</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Label12.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="TextBoxCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 148</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCode.Name" xml:space="preserve">
+    <value>TextBoxCode</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TextBoxSKUScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 50</value>
+  </data>
+  <data name="Label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LabelVoids.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="Label12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelDate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ButtonSave2USB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 86</value>
+  </data>
+  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSku.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label13.Text" xml:space="preserve">
+    <value>Fec. Caducidad:</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
+    <value>Timer1</value>
+  </data>
+  <data name="&gt;&gt;Label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 86</value>
+  </data>
+  <data name="LabelNoCode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="DateTimePickerProduction.CustomFormat" xml:space="preserve">
+    <value>yyMMdd</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="TextBoxCodeScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOff.Name" xml:space="preserve">
+    <value>TextBoxTOff</value>
+  </data>
+  <data name="TextBoxSKUScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 38</value>
+  </data>
+  <data name="ButtonSetParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="LabelVoids.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxSKUScanned.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ButtonSave2USB.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ButtonSave2USB.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalCajas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="ButtonSave2USB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 481</value>
+  </data>
+  <data name="ButtonSave2USB.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Label13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="&gt;&gt;Label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxTOn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBoxBatchScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="TextBoxCodeScanned.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxTOn.ToolTip" xml:space="preserve">
+    <value>Tiempo de espera para expulsar la caja</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelValidas.Name" xml:space="preserve">
+    <value>LabelValidas</value>
+  </data>
+  <data name="&gt;&gt;LabelPresentacion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LabelNoCode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DesiCo. Code Verifier V1.0 - PROMARISCO</value>
+  </data>
+  <data name="LabelBad1DCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 25</value>
+  </data>
+  <data name="LabelVoids.Text" xml:space="preserve">
+    <value>No válidas:</value>
+  </data>
+  <data name="&gt;&gt;LabelBad1DCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="LabelBad2DCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
+  </data>
+  <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LabelValidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 115</value>
+  </data>
+  <data name="&gt;&gt;ButtonSave2USB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="ButtonOperator.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh6ACmAIcAANbW6NTU5tLS5dna6svM4s7P5M3N4srL4cjI4cfH4M/Q3MTF1srK3cLC28XF3sHB
@@ -351,6 +579,1308 @@
         TfXUT01UThVV3wPVUjVV4RzVVCXVU2XVVmVRVRVVV5XVWYXVWg3OWcVVTLXVXeXVXvXVXwXWYA3WgAAA
         Ow==
 </value>
+  </data>
+  <data name="Label15.Text" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="Label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripStatusLabelScannedQr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 17</value>
+  </data>
+  <data name="PictureBoxQr.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="LabelDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 630</value>
+  </data>
+  <data name="&gt;&gt;LabelVoids.Name" xml:space="preserve">
+    <value>LabelVoids</value>
+  </data>
+  <data name="PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTimeOut.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBoxTOff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 29</value>
+  </data>
+  <data name="Label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 25</value>
+  </data>
+  <data name="TextBoxBatchScanned.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>T OUT</value>
+  </data>
+  <data name="&gt;&gt;ButtonSetParameters.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LabelNoCode.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxSKU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 38</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="LabelBad1DCode.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LabelNoCode.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DateTimePickerExpiry.DropDownAlign" type="System.Windows.Forms.LeftRightAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="LabelVoids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="LabelPresentacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 6</value>
+  </data>
+  <data name="TextBoxBatchScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 99</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatchScanned.Name" xml:space="preserve">
+    <value>TextBoxBatchScanned</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelValidas.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TextBoxSKU.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="TextBoxBatchScanned.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="LabelNoCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 115</value>
+  </data>
+  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label12.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LabelTime.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="LabelTime.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxExpiryDateScanned.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Name" xml:space="preserve">
+    <value>StatusStrip1</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOn.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>CdB:</value>
+  </data>
+  <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="PictureBoxQr.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PictureBoxQr.Name" xml:space="preserve">
+    <value>PictureBoxQr</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="Label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;ButtonStart.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="TextBoxSKUScanned.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="TextBoxBatchScanned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonStart.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="PictureBoxSku.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ButtonStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 395</value>
+  </data>
+  <data name="TextBoxTOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 29</value>
+  </data>
+  <data name="DateTimePickerExpiry.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ButtonSave2USB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="DateTimePickerExpiry.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ButtonSetParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 64</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabel1.Name" xml:space="preserve">
+    <value>ToolStripStatusLabel1</value>
+  </data>
+  <data name="ButtonExit.Text" xml:space="preserve">
+    <value>SALIR</value>
+  </data>
+  <data name="TextBoxTOff.ToolTip" xml:space="preserve">
+    <value>Tiempo de permanencia activa del empujador</value>
+  </data>
+  <data name="&gt;&gt;TextBoxProductionDateScanned.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKUScanned.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 153</value>
+  </data>
+  <data name="LabelTime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TextBoxCode.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxProductionDateScanned.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxQr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="LabelValidas.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="TextBoxTimeOut.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PictureBoxSku.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TextBoxCode.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
+    <value>Label6</value>
+  </data>
+  <data name="DateTimePickerProduction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 197</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSku.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ButtonExit.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="LabelPresentacion.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 32</value>
+  </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>Tiempo en 1/10 segundos</value>
+  </data>
+  <data name="LabelTotalCajas.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="DateTimePickerExpiry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 246</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ButtonExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 567</value>
+  </data>
+  <data name="&gt;&gt;ButtonSetParameters.Name" xml:space="preserve">
+    <value>ButtonSetParameters</value>
+  </data>
+  <data name="ButtonOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="TextBoxCodeScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="LabelValidas.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 59</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerExpiry.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ButtonSetParameters.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxSKU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 50</value>
+  </data>
+  <data name="ButtonSetParameters.Text" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="LabelVoids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>523, 25</value>
+  </data>
+  <data name="TextBoxCode.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 246</value>
+  </data>
+  <data name="Label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 25</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKU.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="Label7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="LiveviewForm1.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;LabelNoCode.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;LabelTime.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LabelPresentacion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxQr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.Name" xml:space="preserve">
+    <value>PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelBad2DCode.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DateTimePickerExpiry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="LabelPresentacion.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TextBoxSKU.Name" xml:space="preserve">
+    <value>TextBoxSKU</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 86</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ButtonOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 309</value>
+  </data>
+  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 29</value>
+  </data>
+  <data name="LabelTotalCajas.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LabelBad1DCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 38</value>
+  </data>
+  <data name="ButtonSave2USB.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LabelNoCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 38</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 253</value>
+  </data>
+  <data name="LabelDate.Text" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="ButtonOperator.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;ButtonSetParameters.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelValidas.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxExpiryDateScanned.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatchScanned.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;TextBoxProductionDateScanned.Name" xml:space="preserve">
+    <value>TextBoxProductionDateScanned</value>
+  </data>
+  <data name="&gt;&gt;ButtonSetParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOff.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOn.Name" xml:space="preserve">
+    <value>TextBoxTOn</value>
+  </data>
+  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 328</value>
+  </data>
+  <data name="&gt;&gt;SerialPortIO.Name" xml:space="preserve">
+    <value>SerialPortIO</value>
+  </data>
+  <data name="Label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LiveviewForm1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelScannedQr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonOperator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Name" xml:space="preserve">
+    <value>BackgroundWorker1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBoxCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="ButtonExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt, style=Bold</value>
+  </data>
+  <data name="TextBoxBatch.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="LabelTotalCajas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>523, 78</value>
+  </data>
+  <data name="LabelTotalCajas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>GSE 7-Segment VFD, 36pt</value>
+  </data>
+  <data name="DateTimePickerExpiry.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="ToolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="Label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSku.Name" xml:space="preserve">
+    <value>PictureBoxSku</value>
+  </data>
+  <data name="TextBoxCode.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;LabelValidas.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;LabelNoCode.Name" xml:space="preserve">
+    <value>LabelNoCode</value>
+  </data>
+  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTimeOut.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="Label14.Text" xml:space="preserve">
+    <value>Mal codificado</value>
+  </data>
+  <data name="Label14.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalCajas.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="GroupBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LabelBad2DCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 70</value>
+  </data>
+  <data name="&gt;&gt;Label14.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;LabelValidas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label11.Text" xml:space="preserve">
+    <value>Fec. Producción:</value>
+  </data>
+  <data name="&gt;&gt;Label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBoxTOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 26</value>
+  </data>
+  <data name="&gt;&gt;LabelDate.Name" xml:space="preserve">
+    <value>LabelDate</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerExpiry.Name" xml:space="preserve">
+    <value>DateTimePickerExpiry</value>
+  </data>
+  <data name="LiveviewForm1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt, style=Bold</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelPresentacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 37</value>
+  </data>
+  <data name="TextBoxTimeOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 26</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 499</value>
+  </data>
+  <data name="LabelBad2DCode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ButtonStart.Name" xml:space="preserve">
+    <value>ButtonStart</value>
+  </data>
+  <data name="TextBoxBatch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="LabelValidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 38</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelTime.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LabelPresentacion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonStart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerProduction.Name" xml:space="preserve">
+    <value>DateTimePickerProduction</value>
+  </data>
+  <data name="LabelBad1DCode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TextBoxTimeOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 59</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.Name" xml:space="preserve">
+    <value>ButtonExit</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatchScanned.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolTip1.Name" xml:space="preserve">
+    <value>ToolTip1</value>
+  </data>
+  <data name="Label11.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxCodeScanned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ButtonStart.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ButtonOperator.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LabelDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxBatch.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="LabelBad1DCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
+  </data>
+  <data name="ButtonOperator.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;LabelBad1DCode.Name" xml:space="preserve">
+    <value>LabelBad1DCode</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerProduction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonExit.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="StatusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 667</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Parámetros</value>
+  </data>
+  <data name="Label9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelTotalCajas.Name" xml:space="preserve">
+    <value>LabelTotalCajas</value>
+  </data>
+  <data name="&gt;&gt;ImageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerProduction.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TextBoxExpiryDateScanned.Name" xml:space="preserve">
+    <value>TextBoxExpiryDateScanned</value>
+  </data>
+  <data name="&gt;&gt;LabelVoids.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelBad2DCode.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt, style=Bold</value>
+  </data>
+  <data name="LabelBad1DCode.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ButtonSave2USB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="ToolStripStatusLabelUserEnteredCode.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelScannerBarcode.Name" xml:space="preserve">
+    <value>ToolStripStatusLabelScannerBarcode</value>
+  </data>
+  <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 62</value>
+  </data>
+  <data name="ImageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADq
+        CQAAAk1TRnQBSQFMAgEBBAEAAbgBAgG8AQIBDAEAAQwBAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
+        AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
+        AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
+        AwABZgMAAZkDAAHMAgABMwMAAjMCAAEzAWYCAAEzAZkCAAEzAcwCAAEzAf8CAAFmAwABZgEzAgACZgIA
+        AWYBmQIAAWYBzAIAAWYB/wIAAZkDAAGZATMCAAGZAWYCAAKZAgABmQHMAgABmQH/AgABzAMAAcwBMwIA
+        AcwBZgIAAcwBmQIAAswCAAHMAf8CAAH/AWYCAAH/AZkCAAH/AcwBAAEzAf8CAAH/AQABMwEAATMBAAFm
+        AQABMwEAAZkBAAEzAQABzAEAATMBAAH/AQAB/wEzAgADMwEAAjMBZgEAAjMBmQEAAjMBzAEAAjMB/wEA
+        ATMBZgIAATMBZgEzAQABMwJmAQABMwFmAZkBAAEzAWYBzAEAATMBZgH/AQABMwGZAgABMwGZATMBAAEz
+        AZkBZgEAATMCmQEAATMBmQHMAQABMwGZAf8BAAEzAcwCAAEzAcwBMwEAATMBzAFmAQABMwHMAZkBAAEz
+        AswBAAEzAcwB/wEAATMB/wEzAQABMwH/AWYBAAEzAf8BmQEAATMB/wHMAQABMwL/AQABZgMAAWYBAAEz
+        AQABZgEAAWYBAAFmAQABmQEAAWYBAAHMAQABZgEAAf8BAAFmATMCAAFmAjMBAAFmATMBZgEAAWYBMwGZ
+        AQABZgEzAcwBAAFmATMB/wEAAmYCAAJmATMBAANmAQACZgGZAQACZgHMAQABZgGZAgABZgGZATMBAAFm
+        AZkBZgEAAWYCmQEAAWYBmQHMAQABZgGZAf8BAAFmAcwCAAFmAcwBMwEAAWYBzAGZAQABZgLMAQABZgHM
+        Af8BAAFmAf8CAAFmAf8BMwEAAWYB/wGZAQABZgH/AcwBAAHMAQAB/wEAAf8BAAHMAQACmQIAAZkBMwGZ
+        AQABmQEAAZkBAAGZAQABzAEAAZkDAAGZAjMBAAGZAQABZgEAAZkBMwHMAQABmQEAAf8BAAGZAWYCAAGZ
+        AWYBMwEAAZkBMwFmAQABmQFmAZkBAAGZAWYBzAEAAZkBMwH/AQACmQEzAQACmQFmAQADmQEAApkBzAEA
+        ApkB/wEAAZkBzAIAAZkBzAEzAQABZgHMAWYBAAGZAcwBmQEAAZkCzAEAAZkBzAH/AQABmQH/AgABmQH/
+        ATMBAAGZAcwBZgEAAZkB/wGZAQABmQH/AcwBAAGZAv8BAAHMAwABmQEAATMBAAHMAQABZgEAAcwBAAGZ
+        AQABzAEAAcwBAAGZATMCAAHMAjMBAAHMATMBZgEAAcwBMwGZAQABzAEzAcwBAAHMATMB/wEAAcwBZgIA
+        AcwBZgEzAQABmQJmAQABzAFmAZkBAAHMAWYBzAEAAZkBZgH/AQABzAGZAgABzAGZATMBAAHMAZkBZgEA
+        AcwCmQEAAcwBmQHMAQABzAGZAf8BAALMAgACzAEzAQACzAFmAQACzAGZAQADzAEAAswB/wEAAcwB/wIA
+        AcwB/wEzAQABmQH/AWYBAAHMAf8BmQEAAcwB/wHMAQABzAL/AQABzAEAATMBAAH/AQABZgEAAf8BAAGZ
+        AQABzAEzAgAB/wIzAQAB/wEzAWYBAAH/ATMBmQEAAf8BMwHMAQAB/wEzAf8BAAH/AWYCAAH/AWYBMwEA
+        AcwCZgEAAf8BZgGZAQAB/wFmAcwBAAHMAWYB/wEAAf8BmQIAAf8BmQEzAQAB/wGZAWYBAAH/ApkBAAH/
+        AZkBzAEAAf8BmQH/AQAB/wHMAgAB/wHMATMBAAH/AcwBZgEAAf8BzAGZAQAB/wLMAQAB/wHMAf8BAAL/
+        ATMBAAHMAf8BZgEAAv8BmQEAAv8BzAEAAmYB/wEAAWYB/wFmAQABZgL/AQAB/wJmAQAB/wFmAf8BAAL/
+        AWYBAAEhAQABpQEAA18BAAN3AQADhgEAA5YBAAPLAQADsgEAA9cBAAPdAQAD4wEAA+oBAAPxAQAD+AEA
+        AfAB+wH/AQABpAKgAQADgAMAAf8CAAH/AwAC/wEAAf8DAAH/AQAB/wEAAv8CAAP//wD/AEQAAfQBGwGZ
+        BHgBCAHzAfQB/wEAAfQBwgGYBJcBmAHzAfQB/wEAAfQB8QGZBG8BkwHzAfQB/wEAAfQBGgGUBOMBlAHz
+        AfQB/wEAAbwBeAFWAZcCeAJWAZgB8gH0AQABCAGXAjMC+gEzAVUBlwHCAfQBAAEaAW8CRgFpA0YBkwEa
+        AfQBAAG9AeMB+QRBAUcB4wG9AfQB8wF4AVYBeAGYAp8BngJWAZgB8wEbAZcBMwX6AjMBlwHzAfIBbwFG
+        AW8BFgKUARYCRgGTAfMBGwHjAfkFQQH5AUEB4wHzAZgBVgF4AZ8EwgGfAlYBCAHkATMH+gEzAVUBmAFv
+        AUYBbwaUAkYBkwHjCEEB+QFHAZQBTwGXAZ8GwgGeAVYBmAIzCPoBMwGXAekBRgEWBpQBFgFGAW8B+QpB
+        AeMBLgF4AZ8GwgGfAngCMwn6AZcBHwFvCJQBRgFvAfkKQQHjAS4BmAfCAZ8CeAEzAfoBWgLkAVoF+gGX
+        AR8BbwO9BZQBaQFvAfkBRwEXAuMBRwVBAeMBUAF4ARsC9ATCAZgBlwF4ATMB+gHkAsIBngFaA/oBMwGX
+        AUYBbwG9AfQCvQOUARYBRgFvAfkBFwGUAb0BlAFqBUEB4wF4AZcBCAEbAfMDwgGfAXgBVgGZAZcBVQHk
+        AZ4BwgHkAVoD+gEzAZgCbwGZARsB8wSUAW8BRgGZAhcBFgK9AWoEQQH5AZQB8AKXAZkDwgGfAXgBVgF4
+        ARsBwgJVAVoB5AJaAvoBMwGXAcIBGgJvAZQBvQKUARYB4wFGAW8B8QG9AhcC4wFqA0EB+QHjARoB9AEI
+        AXgBlwN4AZcBVgF4AbwC9AEIAlUBMwL6AjMBlwEIAvQBBwVvAkYBbwEaAvQBmgEXAUcFQQHjAb0B9AEA
+        AfQB8AF4AVACLgFPAZgB8wMAAfQBwgGXBDMB5AEbAwAB9AEaAW8BRgIfAekBbwHyAwAB9AG9ARcE+QHj
+        ARsCAAFCAU0BPgcAAT4DAAEoAwABMAMAARgDAAEBAQABAQUAAcAXAAP/YQABgAEIAQABgAEIAwABgAEI
+        AQABgAEISwABgAE4AQMBgAE4AQMYAAs=
+</value>
+  </data>
+  <data name="&gt;&gt;LabelBad1DCode.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ToolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LiveviewForm1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>Cajas</value>
+  </data>
+  <data name="ToolStripStatusLabelScannedQr.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;LiveviewForm1.Type" xml:space="preserve">
+    <value>Keyence.AutoID.SDK.LiveviewForm, Keyence.AutoID.SDK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 156</value>
+  </data>
+  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 29</value>
+  </data>
+  <data name="TextBoxTimeOut.ToolTip" xml:space="preserve">
+    <value>Tiempo máximo de detección de código</value>
+  </data>
+  <data name="&gt;&gt;LiveviewForm1.Name" xml:space="preserve">
+    <value>LiveviewForm1</value>
+  </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="PictureBoxSku.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 51</value>
+  </data>
+  <data name="Label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>T OFF</value>
+  </data>
+  <data name="StatusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="ButtonExit.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelNoCode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxBatch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 99</value>
+  </data>
+  <data name="LabelBad1DCode.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PictureBoxQr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 98</value>
+  </data>
+  <data name="&gt;&gt;ImageList1.Name" xml:space="preserve">
+    <value>ImageList1</value>
+  </data>
+  <data name="&gt;&gt;ButtonOperator.Name" xml:space="preserve">
+    <value>ButtonOperator</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Verifier</value>
+  </data>
+  <data name="ButtonStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="TextBoxSKU.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 25</value>
+  </data>
+  <data name="Label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Label9.Name" xml:space="preserve">
+    <value>Label9</value>
+  </data>
+  <data name="TextBoxTOn.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="StatusStrip1.Text" xml:space="preserve">
+    <value>StatusStrip1</value>
+  </data>
+  <data name="ToolStripStatusLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ButtonSave2USB.Text" xml:space="preserve">
+    <value>GUARDAR
+ A USB</value>
+  </data>
+  <data name="TextBoxSKUScanned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ButtonOperator.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Label12.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="ToolStripStatusLabel1.Text" xml:space="preserve">
+    <value>IO status</value>
+  </data>
+  <data name="TextBoxBatch.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelUserEnteredCode.Name" xml:space="preserve">
+    <value>ToolStripStatusLabelUserEnteredCode</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCodeScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="ButtonStart.Text" xml:space="preserve">
+    <value>INICIAR</value>
+  </data>
+  <data name="LabelVoids.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LabelValidas.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ToolStripStatusLabelScannerBarcode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LabelTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 519</value>
+  </data>
+  <data name="ButtonSetParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 61</value>
+  </data>
+  <data name="&gt;&gt;Label14.Name" xml:space="preserve">
+    <value>Label14</value>
+  </data>
+  <data name="&gt;&gt;Label15.Name" xml:space="preserve">
+    <value>Label15</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;TextBoxProductionDateScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DateTimePickerExpiry.CustomFormat" xml:space="preserve">
+    <value>yyMMdd</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelScannerBarcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="StatusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 22</value>
+  </data>
+  <data name="ButtonSave2USB.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="ButtonOperator.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="LabelTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>397, 100</value>
+  </data>
+  <data name="Label15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxProductionDateScanned.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TextBoxSKUScanned.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="LabelValidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>Válidas:</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="Label15.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="LabelVoids.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;BackgroundWorker1.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Lote:</value>
+  </data>
+  <data name="&gt;&gt;Label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TextBoxCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="TextBoxSKUScanned.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelScannedQr.Name" xml:space="preserve">
+    <value>ToolStripStatusLabelScannedQr</value>
+  </data>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 29</value>
+  </data>
+  <data name="&gt;&gt;SerialPortIO.Type" xml:space="preserve">
+    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="&gt;&gt;LabelBad1DCode.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;ButtonExit.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="DateTimePickerProduction.DropDownAlign" type="System.Windows.Forms.LeftRightAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="TextBoxSKUScanned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="Label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolStripStatusLabelScannerBarcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 17</value>
+  </data>
+  <data name="ButtonExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="LabelTotalCajas.Text" xml:space="preserve">
+    <value>99999</value>
+  </data>
+  <data name="LabelBad2DCode.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
+  </data>
+  <data name="Label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 77</value>
+  </data>
+  <data name="DateTimePickerProduction.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="ToolStripStatusLabelUserEnteredCode.Text" xml:space="preserve">
+    <value>QR User entered code</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxSku.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelTotalCajas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 75</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelTime.Name" xml:space="preserve">
+    <value>LabelTime</value>
+  </data>
+  <data name="Label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 205</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ButtonStart.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="Label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 122</value>
+  </data>
+  <data name="LabelDate.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="PictureBoxSku.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="TextBoxTOff.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="ButtonExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 86</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKUScanned.Name" xml:space="preserve">
+    <value>TextBoxSKUScanned</value>
+  </data>
+  <data name="LabelPresentacion.Text" xml:space="preserve">
+    <value>Cliente: </value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 29</value>
+  </data>
+  <data name="LabelDate.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DateTimePickerExpiry.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ToolStripStatusLabelUserEnteredCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 17</value>
+  </data>
+  <data name="ButtonOperator.Text" xml:space="preserve">
+    <value>OPERADOR</value>
+  </data>
+  <data name="LabelTotalCajas.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonOperator.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LiveviewForm1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 13</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCodeScanned.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBoxProductionDateScanned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 197</value>
+  </data>
+  <data name="&gt;&gt;LabelBad2DCode.Name" xml:space="preserve">
+    <value>LabelBad2DCode</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxCodeScanned.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCodeScanned.Name" xml:space="preserve">
+    <value>TextBoxCodeScanned</value>
+  </data>
+  <data name="&gt;&gt;Label11.Name" xml:space="preserve">
+    <value>Label11</value>
+  </data>
+  <data name="&gt;&gt;LabelTotalCajas.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label9.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LiveviewForm1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 271</value>
+  </data>
+  <data name="ButtonStart.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;LabelPresentacion.Name" xml:space="preserve">
+    <value>LabelPresentacion</value>
+  </data>
+  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="TextBoxTOff.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="TextBoxTOff.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTimeOut.Name" xml:space="preserve">
+    <value>TextBoxTimeOut</value>
+  </data>
+  <data name="&gt;&gt;LabelVoids.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 689</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 25</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerProduction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBoxBatchScanned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="TextBoxTimeOut.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PictureBoxQr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 37</value>
+  </data>
+  <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 104</value>
+  </data>
+  <data name="Label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="TextBoxCode.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="Label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="PictureBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TextBoxTOn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LabelDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Rounded MT Bold, 21.75pt</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -801,4 +2331,175 @@
         AAAHzwAAgAAAAH/PAACAAAAAAA8AAP///////wAA////////AAD///////8AAP///////wAA
 </value>
   </data>
+  <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LabelBad2DCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 86</value>
+  </data>
+  <data name="LabelTotalCajas.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="PictureBoxSku.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 37</value>
+  </data>
+  <data name="DateTimePickerProduction.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ButtonExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxExpiryDateScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="TextBoxCodeScanned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="ToolStripStatusLabelScannerBarcode.Text" xml:space="preserve">
+    <value>Scanner Barcode</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatchScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PictureBoxQr.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="DateTimePickerProduction.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="ToolStripStatusLabelScannerBarcode.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="LiveviewForm1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKU.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="ButtonSave2USB.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxCodeScanned.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxQr.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LabelBad2DCode.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="LabelPresentacion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="TextBoxExpiryDateScanned.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="LabelDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 33</value>
+  </data>
+  <data name="TextBoxBatchScanned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="&gt;&gt;PictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ToolStripStatusLabelUserEnteredCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonOperator.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>T ON</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxTOn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 132</value>
+  </data>
+  <data name="TextBoxBatch.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="LabelNoCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt, style=Bold</value>
+  </data>
+  <data name="StatusStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LabelVoids.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerExpiry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSKUScanned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelTotalCajas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBatch.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="DateTimePickerProduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 38</value>
+  </data>
+  <data name="DateTimePickerProduction.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>438, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es-EC</value>
+  </metadata>
+  <metadata name="SerialPortIO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="StatusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>527, 17</value>
+  </metadata>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>339, 17</value>
+  </metadata>
+  <metadata name="ImageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>644, 17</value>
+  </metadata>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>176, 17</value>
+  </metadata>
 </root>
